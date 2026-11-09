@@ -5,7 +5,8 @@
   "description": "Автономный опрос обратной связи по пилоту изменений в HR РТК ИТ",
   "scripts": {
     "test": "node --test --test-isolation=none tests/*.test.js",
-    "test:browser": "node tests/browser.cjs && node tests/browser-edge.cjs"
+    "test:browser": "node tests/browser.cjs && node tests/browser-edge.cjs && node tests/browser-standalone.cjs",
+    "build": "node scripts/build-standalone.cjs"
   },
   "devDependencies": {
     "playwright": "1.57.0"
